@@ -59,9 +59,9 @@ def url_redirect(id):
         conn.commit()
         conn.close()
         return redirect(str(original_url).lower())
-    else:
-        flash('Invalid URL')
-        return redirect(url_for('index'))
+    # else:
+    #     flash('Invalid URL')
+    #     return redirect(url_for('index'))
 
 
 @app.route('/stats')
@@ -78,3 +78,7 @@ def stats():
         urls.append(url)
 
     return render_template('stats.html', urls=urls)
+
+
+if __name__ == "__main__":
+    app.run()
