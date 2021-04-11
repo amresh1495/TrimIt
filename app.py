@@ -59,9 +59,9 @@ def url_redirect(id):
         conn.commit()
         conn.close()
         return redirect(str(original_url).lower())
-    # else:
-    #     flash('Invalid URL')
-    #     return redirect(url_for('index'))
+    else:
+        flash('Please enter a valid URL...(e.g. https://www.google.com')
+        return redirect(url_for('index'))
 
 
 @app.route('/stats')
