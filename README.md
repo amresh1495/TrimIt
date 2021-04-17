@@ -1,1 +1,1 @@
-Currently up on - http://13.127.163.182:5000/ (AWS EC2 Instance)
+Currently up on - http://65.2.112.172:5000/ (AWS EC2 Instance)
